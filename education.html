@@ -3,51 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Education</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Your Portfolio</title>
+    <style>
+        .image-container {
+            display: flex;                /* Enables flexbox */
+            justify-content: space-between; /* Distribute images evenly */
+            gap: 20px;                   /* Adds some space between items */
+        }
+
+        .image-item {
+            text-align: center;          /* Center-aligns the images and text */
+            max-width: 300px;            /* Ensures images don't exceed their container */
+        }
+
+        .image-item img {
+            width: 100%;                 /* Makes the image responsive */
+            height: auto;                /* Maintains aspect ratio */
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>My Educational Journey</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="dogs.html">Dogs</a></li>
-                <li><a href="hometown.html">Hometown</a></li>
-            </ul>
-        </nav>
-    </header>
-
-<main>
-    <h2>My Universities</h2>
-    <ul>
-        <li>
-            <strong>BSc Physics</strong>: University of Bristol
-            <a href="https://www.bristol.ac.uk/study/undergraduate/2024/physics/bsc-physics/" target="_blank">My Course</a>
-        </li>
-        <li>
-            <strong>MSc Computing</strong>: Imperial College London
-            <a href="https://www.imperial.ac.uk/study/pg/computing/msc-computing/" target="_blank">My Course</a>
-        </li>
-    </ul>
-    
-    <div class="image-container">
-        <div class="image-item">
-            <img src="bristol.jpg" alt="Bristol" style="width: 300px; height: auto;">
-            <div>
-                <strong>University of Bristol</strong>
+    <main>
+        <h2>My Universities</h2>
+        <ul>
+            <li>
+                <strong>BSc Physics</strong>: University of Bristol
                 <a href="https://www.bristol.ac.uk/study/undergraduate/2024/physics/bsc-physics/" target="_blank">My Course</a>
-            </div>
-        </div>
-        
-        <div class="image-item">
-            <img src="london.jpg" alt="London" style="width: 300px; height: auto;">
-            <div>
-                <strong>Imperial College London</strong>
+            </li>
+            <li>
+                <strong>MSc Computing</strong>: Imperial College London
                 <a href="https://www.imperial.ac.uk/study/pg/computing/msc-computing/" target="_blank">My Course</a>
+            </li>
+        </ul>
+        
+        <div class="image-container">
+            <div class="image-item">
+                <img src="bristol.jpg" alt="Bristol">
+                <div>
+                    <strong>University of Bristol</strong>
+                    <a href="https://www.bristol.ac.uk/study/undergraduate/2024/physics/bsc-physics/" target="_blank">My Course</a>
+                </div>
+            </div>
+            
+            <div class="image-item">
+                <img src="london.jpg" alt="London">
+                <div>
+                    <strong>Imperial College London</strong>
+                    <a href="https://www.imperial.ac.uk/study/pg/computing/msc-computing/" target="_blank">My Course</a>
+                </div>
             </div>
         </div>
-    </div>
-</main>
-
-
+    </main>
+</body>
+</html>
