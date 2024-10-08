@@ -3,29 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Education</title>
+    <title>Education</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>My Educational Journey</h1>
+        <h1>My First Webpage</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="dogs.html">Dogs</a></li>
                 <li><a href="hometown.html">Hometown</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="dogs.html">Dogs</a></li>   
             </ul>
         </nav>
     </header>
 
     <main>
-        <h2>Schools I Attended</h2>
+        <h2>My Education</h2>
         <ul>
-            <li><strong>BSc Physics</strong>: University of Bristol</li>
-            <li><strong>MSc Computing</strong>: Imperial College London</li>
+            <li>
+                <strong>BSc Physics</strong>: University of Bristol
+                <a href="https://www.bristol.ac.uk/study/undergraduate/2024/physics/bsc-physics/" target="_blank">My Course</a>
+            </li>
+            <li>
+                <strong>MSc Computing</strong>: Imperial College London
+                <a href="https://www.imperial.ac.uk/study/courses/postgraduate-taught/computing/" target="_blank">My Course</a>
+            </li>
         </ul>
-        <p>Education has played a big role in shaping who I am today.</p>
-        <img src="https://example.com/graduation-image.jpg" alt="Graduation">
+        
+        <div class="image-container">
+            <div class="image-item">
+                <img src="bristol.jpg" alt="Bristol" style="max-width: 180px; height: auto;"> 
+                <div>
+                    University of Bristol
+                </div>
+            </div>
+            
+            <div class="image-item">
+                <img src="london.jpg" alt="London" style="max-width: 180px; height: auto;"> 
+                <div>
+                    Imperial College London
+                </div>
+            </div>
+        </div>
     </main>
 </body>
 </html>
