@@ -8,12 +8,23 @@
         body {
             font-family: Arial, sans-serif; /* Set a default font for the body */
             margin: 0;                     /* Remove default margin */
-            padding: 20px;                 /* Add some padding */
+            padding: 0;                     /* Remove default padding */
             background-color: #f4f4f4;     /* Set a light background color */
+        }
+
+        header {
+            background-color: #333;        /* Dark background for header */
+            color: #fff;                   /* White text color */
+            padding: 10px 20px;            /* Padding inside header */
+            position: fixed;                /* Fix header at the top */
+            width: 100%;                   /* Full width */
+            top: 0;                        /* Stick to the top */
+            z-index: 1000;                 /* Ensure it's on top */
         }
 
         h2 {
             color: #333;                   /* Set a color for the headings */
+            margin-top: 60px;             /* Add top margin to avoid overlap with fixed header */
         }
 
         ul {
@@ -39,6 +50,17 @@
     </style>
 </head>
 <body>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#dogs">Dogs</a></li>
+                <li><a href="#hometown">Hometown</a></li>
+                <li><a href="#education">Education</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <main>
         <h2>My Universities</h2>
         <ul>
